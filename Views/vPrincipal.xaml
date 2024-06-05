@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtoasaS2.Views.vPrincipal"
+             Title="vPrincipal">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="20">
+        <Label 
+            Text="SEMANA DOS: CONTROLES"
+            FontSize="20"
+            HorizontalTextAlignment="Center"
+            TextColor="Red"/>
+
+        <Entry x:Name="txtDato1"
+               Placeholder="Ingrese dato 1"
+               Keyboard="Numeric"
+               MaxLength="4"/>
+        <Entry x:Name="txtDato2"
+           Placeholder="Ingrese dato 2"
+           Keyboard="Numeric"
+           MaxLength="4"/>
+        <Picker x:Name="pkCiudades" Title="Ciudades">
+            <Picker.Items>
+                <x:String>QUITO</x:String>
+                <x:String>GUAYAQUIL</x:String>
+                <x:String>CUENCA</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy">
+            
+        </DatePicker>
+
+
+        <Button x:Name="btnCalcular"
+                Text="Calcular"
+                Clicked="btnCalcular_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
